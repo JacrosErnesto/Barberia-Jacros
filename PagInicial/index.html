@@ -1,0 +1,113 @@
+<!DOCTYPE html><!--indica que es un archivo HTML-5 al nevegador "tag informativa"-->
+<html lang="es"> <!--primer tag para HTML para escribir todas las tags y con un atributo o propediedad de tag para definir idioma-->
+    <head><!--van la mayoria de tags informativas y la tag para nombre de pestania-->
+        <meta charset="UTF-8"><!--diccionario con el que estamos trabajando "tag informativa"-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Barbería Jacros
+        </title><!--tag para nombre de la pestania-->
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <!--links para tomar tipo d efuentes de externos como google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
+        
+    </head>
+    <body><!-- va la tags de contenido como <h1> o <p> -->
+
+        <header class="menu"> 
+            <div class="PrimerBloque">
+                <h1 class="tituloPrincipal">
+                    <img src="recursos/imagenes/logo.png" alt="logoEncabezado" >
+                    <nav>
+                        <ul class="menu_navegacion">
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="productos.html">PRODUCTOS</a></li>
+                            <li > <a href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+    
+                </h1>
+            </div>
+
+        </header>
+
+        <img class="banner" src="capeta _recursos/PaginaCurso/banner/banner.jpg"/>
+
+        <main>
+            
+            <section class="principal"><!--tag para dividir en bloques
+                primer bloque-->
+               <h2 class="titulo_Principal">
+                   Sobre la Barbería Jacros
+              </h2>
+              <img src="capeta _recursos/PaginaCurso/imagenSobreBarberia/utensilios.jpeg" alt="imgUtencilios" class="utensilios">
+      
+              <p> 
+                  Ubicada en el corazón de la ciudad, la
+                  <strong>
+                      Barbería Jacros
+                  </strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. 
+              </p>
+          
+              <p id="mision">
+                  <em> <!--Tag para enfasis en la palabra (italico)-->
+                      Nuestra misión es: 
+                      <strong><!--Tag para poner negritas la palabra-->
+                          "Proporcionar autoestima y calidad de vida a nuestros clientes".
+                      </strong>
+                  </em>
+              </p>
+      
+              <p>
+                  Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. 
+              </p>
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo_Principal">Nuestra Ubicación</h3>
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+                <div class="mapa_contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.468284610649!2d-157.85468858600365!3d21.292504984100027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006d8d1421543d%3A0x4afad6ea3166ddb9!2shawai!5e0!3m2!1ses-419!2smx!4v1665894714405!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--La tag <iframe> crea una ventana para poder colocar: videos, mapas, imagenes, GIF,
+                    pag de facebook, twitter etc-->
+                </div>
+                
+            </section>
+      
+            <section class="diferenciales"><!--Segundo Bloque-->
+               
+                <h3 class="titulo_Principal">Diferencias</h3>
+                
+                <div class="contenido_diferenciales">
+
+                    <ul id="diferencias" class="lista_diferenciales"><!--tag para listas desordenadas-->
+                        <!--por defecto las listas tiene por defecto tienen propiedades como un salto de linea y que ocupan todo el espacio horizontalmente por eso se usa uns propiedad en css par que solo use el espacio de cada ITEM-->
+                       <li class="items">-Atencion personalizada a los clientes</li> <!--tag para lista de items para darle formato-->
+                       <li class="items">-Espacio diferenciado</li>
+                       <li class="items">-Localizacion</li>
+                       <li class="items">-Profecionales calificados</li>
+                       <li class="items">-Puntualidad</li>
+                       <li class="items">-Limpieza</li>
+                    </ul><img id="segundaImagen" src="capeta _recursos/PaginaCurso/diferenciales/diferenciales.jpg"
+                    alt="imagenSegundoBloque" class="imagen_Diferenciales"><!--ponemos las tags "</ul>" y "<img>"  juntas porque hemos puesto en 
+                    en le css hemos puesto el estilo de "display: inlineblock; para esas dos tags y toma en cuenta el espaciado que se pone en el
+                    doc HTML asi que lo eliminamos poniendolas juntas" -->
+                
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?start=12" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="recursos/imagenes/logo-blanco.png" alt="logoFooter">
+            <p class="copyright"> &copy Copyright Barbera Alura - 2022</p>
+        </footer>
+    </body>
+</html> 

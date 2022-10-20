@@ -1,0 +1,67 @@
+/*todos los selectores tiene el mismo nombres que las tags en html
+y deben llevar el orden como la estructura del documento de HTML*/
+.titulo_principal{
+    padding-left: 30px;
+}
+#banner{
+    width: 100%; /*ancho*/
+}
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+.titulo_centralizado{
+    font-size: 40px;/*tamanio fuente*/
+    text-align: center;/*alinacion del texto*/
+    background: #cccccc;/*fondo*/
+    border: 10px solid #000000;/*borde*/
+    padding: 20px;/*margen interno*/
+    /*height: 150px;*//*altura*/
+    margin: 40px;/*margen externo*/
+}
+p{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#mision{
+    /*ponemos el caracter "#" para referirnos al "id" de una tag
+    especifica en este casao es un "id con nombre mision" de una tag
+    parrafo y asi, solo se aplica ese cambio a esa tag especifica*/
+    font-size: 30px;   
+}
+em strong{
+    /*nos pone el color "rojo" en el parrafo donde tiene esta cambinacion
+    de tags y asi, no poner color "red" en todas las tags que solo tienen
+    la tag "strong"*/
+    color: red;
+}
+ul{
+    color: aqua;
+    /*propiedad para que la lsita solo ocupe el espacio de las lista
+     y no mas*/
+    display: inline-block;
+    /*para alinear en la parte de arriba*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    border: 5px solid #000000;
+}
+#diferencias{
+    color: darkgoldenrod;
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.items{
+    /*usamos un "punto" para referenciar una clase la cual usamos 
+    en las tags en HTML y se usa class porque se puede reutilizar
+    el estilo e "id" solo puedo usarlo una vez */
+    font-style: italic;
+}
+#segundaImagen{
+   width: 50%;
+}

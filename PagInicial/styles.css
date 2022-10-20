@@ -1,0 +1,343 @@
+body{
+    font-family: 'Alegreya', serif;
+}
+header{
+    background-color: #949494b6;
+    padding:          20px 0 ;
+}
+.banner{
+    margin-top: 1em ;
+}
+.PrimerBloque{
+    width:    940px;
+    position: relative;
+    margin:   0 auto;
+}
+nav{
+    position: absolute;
+    top:      110px;
+    right:    0px;
+}
+nav li{
+    display:     inline;
+    margin-left: 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color:          black;
+    font-weight:    bold;
+    font-size:      22px;
+    text-decoration:none;
+
+}
+
+nav a:hover{
+    /*al poner dos puntos depues de las tags estas diciendo que vas usar una propiedad en este caso
+    usamos la propiedad "hover" que al pasar el cursor por encima del objeto o elemento y poner un color esta cambiara 
+    al nuevo color definido. Tanto "Hover y Active" son considerados pseudo elementos*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+.productos{
+    width:   940px;
+    margin:  0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;/* tengo tres objetos dentro del li y cada objetoo tendra el 30% asi sumando 90%
+    y el 10% restante se distribuira entre los espacios de cada uno de los elemnetos */
+    vertical-align: top;
+    /*background-color: #cccccc;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;/*al aumentarle el paddin estamos sobre pasando el limite de nacho que hemos definido en 940px
+    ya que cada item estara ocupando el 30% y son 3 = 90 %  mas mas el margekn que hemos pasado de 1.5% de laterales que son 
+    6 then, 6 por 1.5% = 9% mas el 90% = 99%*/
+    box-sizing: border-box;/* entonces para no sobre pasar el 100% que hemos definido usamos esta propiedad para
+    que el limite de cada item sea solomente el 30% y el padding antes definido sera parte de ese 30%
+    */
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    border: 2px solid  #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    /*al activar esta propiedad "active" se realiza esta accion de cambiar el color del objeto la dar click  en el bjeto
+    en este caso color verde.*/
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size:   30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size:   20px;
+    font-weight: bold;
+    margin-top:  10px;
+}
+
+footer{
+    
+    text-align: center;
+    background: url(recursos/imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+.main-contacto{
+    width: 940px;
+    margin: 0 auto;   
+    
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;/* se pone padding para hacer mas grande
+    input asi el usario tiene mas espacio haciendolo mas alto el formulario
+    */
+    width: 50%;/*usamos el 50% de los  940px que definimos anteriormente 
+    esto hace mas grande a lo ancho el formularopo*/
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: .5s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    font-size: 18.5px;
+    transform: scale(1.05);
+  
+}
+.enviar:active{
+  background: #088c19;
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+/* empieza el css para el index*/
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo_Principal{
+    text-align: center;
+    font-size: 2em;/*al usar "2em" le decimos que sera dos veces el tamanio que tiene por defecto el el navegador*/
+    margin: 0 0 1em;
+    clear: left;/*al limpiar estamos diciendo que la imagen que hemos puesto posterior con la propiedad float
+    no modifique mas  alla del bloque la imagen ala que nos referimos es la de "utencilios.jpg" con propiedad
+    de float*/
+    text-shadow: 2px 2px 10px #888888;
+    /*text-shadow es para sombra poner sombra en el texto y usa los mismos parametros que tiene 
+    box-shadow :) */
+}
+
+.titulo_Principal:first-letter{
+    font-weight: bold;
+    /*pseudo elementos se usan para modificar un elemento especifico es este caso ":first-letter" con este psudo elemento modifica
+    la primera letra del titulo, tambien podemos usar el psudo elemento p:first-line, para modificar la primera linea del parrafo*/
+}
+p:first-letter{
+   font-weight: bold;
+}
+.titulo_Principal::before{
+    content: "[";
+}
+.titulo_Principal::after{
+    content: "]";
+}
+/*podemos insertar algun contenido despues y antes de un elemento usando los psudos elementos como ::after y ::beforere
+y en l parte de las llaves debemos usar  la keyword "content" y el elemento que queremos insertar*/
+
+.items::before{
+    content: "☠";
+}
+.principal p{
+    margin: 0 0 1em;
+
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);/*usamos la propiedad "linear-grdient(color,color,color...nColor)" tambien es posoble mover el degradado poniendo\
+    grados al inicio por ejemplo, "linear-grdient(45 deg, color,color,color...nColor)". otra opcion es poner el porcentaje que queremos usar de cada
+    color delante del mismo ejemplo: "linear-grdient(color1 50%,color2,color3...colorN)". La otra opcion seria "radial-grdient(color,color,color...nColor) para hacer el degradado en forma de ciruclo"*/
+
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa_contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    /*
+        en el estilo box-shadow tenemos "inset" y con parametros ponemos sombra interna 
+    */
+   /* box-shadow: inset 0 0 30px red;*/
+}
+
+.contenido_diferenciales{
+    width: 640px;
+    margin: 0 auto;
+    
+}
+.lista_diferenciales{
+    width: 40%;
+    display: inline-block;/*esta propiedad toma los espacios que se han puesto en el doc de HTML, por lo tanto hemos puesto 
+    dos tags juntas sin espacios de por medio.*/
+    vertical-align: top;
+}
+
+.imagen_Diferenciales{
+    width: 60%;
+   /* box-shadow: 20px 20px  30px 15px #000000, 10px 10px 30px 10px yellow;*/
+    /*
+        los dos primeros parametros son para cuanto habra de sombra y va en sentido horario
+        pueden ser negativos  va sobre "Y" y "X" el tercero es sobre el degradado, cuarto el alcance
+        y quinto color, se puede poner las sombras negativas poniendo una coma terminando los
+        5 o 3 primeros parametros
+    */
+}
+.imagen_Diferenciales:hover{
+    opacity: 30%;
+    transition: 400ms;
+    
+}
+
+.items{
+    line-height: 1.5;/*nos da la el interlineado el 50% mas grade que la misma fuente, funciona similar a para metro "em" donde 
+    nos da el tamanio predeterminado*/
+}
+.items:first-child{
+    font-weight: bold;
+    /*al usar "first-child estamos usando un psuedoclase . para no modicar todos los items en este casi estamos diciendo que vamos a modificar
+    el pirmer elemento que tiene la clase "items" tambien podemos usar "last-child" o "nth-child(numero de elemento)" asi que
+    le vamos a decir que elemento especifico modificar. tambien podemos usar "nth-child(2n)" y esto modificara a los items pares  */
+}
+
+.video{
+    margin: 1em auto;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+     }
+ .PrimerBloque, .principal, .mapa_contenido,.contenido_diferenciales{
+    width: auto;
+    }
+    .lista_diferenciales,.imagen_Diferenciales{
+        width: 100%;
+    }
+}
+
+/*media query le podemos dar una configuracion al tener otro tipo de monitor o pantalla
+en este caso le estamos diciendo que hasta que la pantalla sea como maximo 480px se aplicara 
+en el body un background color rojo rebazando ese parametro no se aplicaraa */
+
+    /*selectores avanzados*/
+    main > p{
+        /*background: #088c19;*/
+        /*con el simbolo > le estamos diciendo que le apliquemos los estilos a los hijos de esa tag, en este ejemplo a los parrafos hijos de 
+        la tag "main"*/
+    }
+    
+    img + p{
+        /*background: #c78c19;*/
+        
+        /*con el simbolo de "+" le estamos diciendo que le aplique el estilo al siguiente parrafo despues de la tag "img" solo al sigueinte*/
+    }
+    img ~ p{
+       /* background:red;*/
+        /* con este simbolo le estamos diciendo que aplique a todos los parrafos des pues de la tag "img"*/     
+    }
+    .principal p:not(#mision){
+       /* background: yellow;*/
+        /* con la pseudo clase ":not(#id de la tag)" le estamos diciendo que le aplique a todos los parrafos el estilo definido menos al de ese "id" marcado */
+    }
+    
+    /*
+        realizar calculos en tamanio de imagenes respecto a la pagina ejemplo: 
+    
+        width: calc( (100% / 3) - 10px )
+    
+    ¡Alternativa correcta! Es necesario calcular el un tercio del elemento, esa es una de las formas de hacer eso, luego le restamos los 10px.
+    */

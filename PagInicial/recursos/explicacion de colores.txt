@@ -1,0 +1,22 @@
+Alfabetos
+a,b,c,d,e...
+0,1,2,3,4,5,6,7,8,9.
+0,1.
+
+exadecimal es la combinacion del decimal y letras
+0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f.
+se combinan solo 6 letras 
+
+- - - - - -
+r r g g b b
+#000000 = color negro
+#ffffff = color balanco
+Donde el valor de "cero" es el color mas tenue y
+"F" el color mas fuerte
+#ff0000 = color rojo
+
+Sistema RGB
+0   = valor mas pequenio o ausencia de color
+255 = valor mas grande y toda la intensidad del color 
+rgb(255,255,255);
+

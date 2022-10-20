@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recursos/reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Contacto - Barberia Alura</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="PrimerBloque">
+                <h1 class="tituloPrincipal">
+                    <img src="recursos/imagenes/logo.png" alt="logoEncabezado" srcset="">
+                    <nav>
+                        <ul class="menu_navegacion">
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="productos.html">PRODUCTOS</a></li>
+                            <li > <a href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+    
+                </h1>
+            </div>
+
+        </header>
+        <main class="main-contacto">
+            <form action="">
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" class="input-padron" required placeholder="escribe tu nombre completo">
+
+                <label for="correoElectronico"> Correo Electronico</label>
+                <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx)xxxxxxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required placeholder="escribe un mensaje"></textarea>
+
+                <fieldset>
+                    <!--se usa la tag "fieldset" para marcar que todos los items estaa refiriendo a la misma cosa o tema
+                    y en lugar de usar la tag "p" debemos usar dentro del "fieldset" la tag "legend" 
+                    se usa como buena praactica como en formularios de tajetas de creedito y debito -->
+                    <legend>Como te gustaria ser contactado?</legend>
+
+                    <label for="radio-email"> <input type="radio"  id="radio-email" value="email" name="contacto">Email</label>
+                   
+
+                    <label for="radio-telefono"><input type="radio"  id="radio-telefono" value="telefono" name="contacto">Telefono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio"  id="radio-whatsapp" value="whatsapp" name="contacto" checked>Whatsapp</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>En cual horario desea ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Maniana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+               
+                <label class="checkbox"><input type="checkbox" name="" id="" checked>Le gustaria recibir novedades de Barberia Alura?</label>
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+            <table>
+                <thead> <!--ponemos la tag "thead" para definir campo de la tabla o cabecera-->
+                    <th>Dia</th> <!--ponemos la tag "th dentro de "thead" para el nombre de cada campo-->
+                    <th>Horario</th>
+
+                </thead>
+                
+                <tbody><!--la tag  tbody se pone para el cuerpo d el atabla-->
+                    <tr><!--la tag "tr" espara filas -->
+                        <td> Lunes </td><!--la tag "td" es para las columnas-->
+                        <td> 08 - 20 h </td>   
+                    </tr>
+                    <tr>
+                        <td> Miercoles </td>
+                        <td> 08 - 20 h </td>
+    
+                    </tr>
+                    <tr>
+                        <td> Viernes </td>
+                        <td> 08 - 20 h </td>
+                     </tr> 
+                </tbody>            
+            </table>
+        </main>
+        <footer>
+            <img src="recursos/imagenes/logo-blanco.png" alt="logoFooter">
+            <p class="copyright"> &copy Copyright Barbera Alura - 2022</p>
+        </footer>
+    
+    </body>
+</html>
